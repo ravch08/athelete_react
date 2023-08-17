@@ -1,4 +1,6 @@
+import PropTypes from "prop-types";
 import React from "react";
+
 import { Link } from "react-router-dom";
 
 const NewArrivalItem = (props) => {
@@ -20,6 +22,13 @@ const NewArrivalItem = (props) => {
       </Link>
     </div>
   );
+};
+
+NewArrivalItem.prototype = {
+  title: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  priceCrossed: PropTypes.number.isRequired,
 };
 
 export default NewArrivalItem;

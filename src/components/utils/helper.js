@@ -82,5 +82,4 @@ export { default as Contact } from "../pages/Contact.jsx";
 export { default as Home } from "../pages/Home.jsx";
 export { default as Men } from "../pages/Men.jsx";
 export { default as Page404 } from "../pages/Page404.jsx";
-export { default as Sports } from "../pages/Sports.jsx";
 export { default as Women } from "../pages/Women.jsx";

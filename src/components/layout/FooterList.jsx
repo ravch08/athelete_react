@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
@@ -17,6 +18,11 @@ const FooterList = (props) => {
       </div>
     </div>
   );
+};
+
+FooterList.prototype = {
+  title: PropTypes.string.isRequired,
+  arrList: PropTypes.object.isRequired,
 };
 
 export default FooterList;

@@ -361,10 +361,28 @@ header {
   align-items: center;
   justify-content: center;
 
+  .nav-link {
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.6rem;
+    position: relative;
+    padding: 2.5rem 3rem;
+    color: var(--color-light-100);
+    font-family: var(--fm-primary);
+    transition: color 0.3s ease-in-out;
+
+    &.active {
+      color: #c3e235;
+      background-color: var(--color-hover);
+    }
+  }
+
   .nav-item {
     height: 100%;
     display: flex;
-    padding: 0 1rem;
     overflow: hidden;
     align-items: center;
     transition: background-color 0.3s ease-in-out;
@@ -414,20 +432,6 @@ header {
         }
       }
     }
-  }
-
-  .nav-link {
-    z-index: 9;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    font-size: 1.6rem;
-    position: relative;
-    padding: 2.5rem 2rem;
-    color: var(--color-light-100);
-    font-family: var(--fm-primary);
-    transition: color 0.3s ease-in-out;
   }
 }
 

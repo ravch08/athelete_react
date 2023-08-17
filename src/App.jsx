@@ -11,7 +11,6 @@ import {
   Home,
   Men,
   Page404,
-  Sports,
   Women,
 } from "./components/utils/helper";
 
@@ -25,7 +24,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/women" element={<Women />} />
         <Route path="/men" element={<Men />} />
-        <Route path="/sports" element={<Sports />} />
         <Route path="/arrivals" element={<Arrivals />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/categories" element={<Categories />} />

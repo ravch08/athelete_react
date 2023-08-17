@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 const FeatureItem = (props) => {
@@ -10,6 +11,11 @@ const FeatureItem = (props) => {
       <div className="btn btn-blue">SHOP NOW</div>
     </div>
   );
+};
+
+FeatureItem.prototype = {
+  title: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
 };
 
 export default FeatureItem;

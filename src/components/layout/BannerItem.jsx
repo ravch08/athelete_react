@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 const BannerItem = (props) => {
@@ -19,6 +20,15 @@ const BannerItem = (props) => {
       </div>
     </div>
   );
+};
+
+BannerItem.prototype = {
+  title: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  subText: PropTypes.string.isRequired,
+  btnText: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  imgSrcHover: PropTypes.string.isRequired,
 };
 
 export default BannerItem;

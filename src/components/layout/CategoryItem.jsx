@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -19,6 +20,14 @@ const CategoryItem = (props) => {
       </Link>
     </div>
   );
+};
+
+CategoryItem.prototype = {
+  title: PropTypes.string.isRequired,
+  categoryItem1: PropTypes.string.isRequired,
+  categoryItem2: PropTypes.string.isRequired,
+  categoryItem3: PropTypes.string.isRequired,
+  categoryItem4: PropTypes.string.isRequired,
 };
 
 export default CategoryItem;

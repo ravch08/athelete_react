@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { faHeart, faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,9 +17,14 @@ const Navbar = () => {
         <nav className="navbar-nav">
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/women" className="nav-link">
+              <NavLink to="/" className="nav-link">
+                HOME
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/women" className="nav-link">
                 WOMEN
-              </Link>
+              </NavLink>
               <div className="dropdown-menu">
                 <div className="dropdown-wrapper">
                   <div className="col">
@@ -271,34 +276,29 @@ const Navbar = () => {
               </div>
             </li>
             <li className="nav-item">
-              <Link to="/men" className="nav-link">
+              <NavLink to="/men" className="nav-link">
                 MEN
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/sports" className="nav-link">
-                SPORTS
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/arrivals" className="nav-link">
+              <NavLink to="/arrivals" className="nav-link">
                 ARRIVALS
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/blog" className="nav-link">
+              <NavLink to="/blog" className="nav-link">
                 BLOG
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/categories" className="nav-link">
+              <NavLink to="/categories" className="nav-link">
                 CATEGORIES
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link">
+              <NavLink to="/contact" className="nav-link">
                 CONTACT
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
