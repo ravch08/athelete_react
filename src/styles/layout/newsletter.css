@@ -1,0 +1,52 @@
+#newsletter {
+  background-color: var(--color-primary);
+
+  .newsletter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2 {
+    color: white;
+    line-height: 1.2;
+    font-size: 3.6rem;
+  }
+}
+
+.newletter-submit {
+  width: 100%;
+  display: flex;
+  flex-basis: 40%;
+  position: relative;
+
+  svg {
+    top: 20%;
+    color: white;
+    font-size: 2.2rem;
+    position: absolute;
+  }
+
+  input {
+    width: 70%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+
+    &:focus {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid white;
+    }
+
+    &::placeholder {
+      color: white;
+      padding-left: 4rem;
+    }
+  }
+
+  button {
+    width: 30%;
+  }
+}

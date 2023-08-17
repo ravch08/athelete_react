@@ -1,0 +1,103 @@
+.gear-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.gear-clothing,
+.shoulder-pads {
+  width: 49%;
+  display: flex;
+  padding: 0 2rem;
+  margin-inline: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h4 {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .cross-price,
+  .prod-price {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--color-primary);
+  }
+
+  .cross-price {
+    opacity: 0.6;
+    margin-left: 0.6rem;
+    text-decoration: line-through;
+  }
+
+  .heading {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+/* // Side by Side  ------------------------------------------------------------------------------- */
+
+#brands {
+  padding: 0;
+}
+
+#sideBySide {
+  padding: var(--section-padding 0 0);
+
+  .btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    opacity: 0;
+    line-height: initial;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+}
+
+.side-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  figure {
+    flex-grow: 1;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.3s ease-in-out;
+      background-color: var(--color-Dark-800);
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.4;
+      }
+
+      .btn {
+        top: 50% !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}

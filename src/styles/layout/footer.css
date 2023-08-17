@@ -1,0 +1,154 @@
+footer {
+  color: white;
+  padding: var(--section-padding 0);
+  background-color: var(--color-footerBar);
+
+  .footer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .ftr-logo {
+    flex-basis: 20%;
+  }
+
+  .ftr-nav {
+    display: flex;
+    flex-basis: 70%;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .ftr-col,
+    .ftr-cols,
+    .ftr-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  .ftr-link {
+    color: white;
+    font-weight: 600;
+    padding: 1rem 0.4rem;
+    font-size: var(--fs-h4);
+    font-family: var(--fm-primary);
+
+    &:nth-child(3) {
+      margin-top: 2rem;
+    }
+  }
+
+  .blue {
+    color: var(--color-primary);
+  }
+}
+
+.ftr-logo {
+  a {
+    color: white;
+    font-weight: 700;
+    font-size: var(--fs-h2);
+    font-family: var(--fm-primary);
+  }
+
+  p {
+    margin: 2rem 0;
+    color: var(--color-text-primary);
+  }
+
+  .social-links svg {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.ftr-list {
+  a {
+    padding: 0.4rem;
+    font-size: var(--fs-icons);
+    color: var(--color-text-primary);
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+
+    &:hover {
+      color: white;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.footbar {
+  padding: 2.8rem 0;
+  background-color: var(--color-Dark-400);
+
+  .footbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    flex-basis: 60%;
+    font-size: var(--fs-icons);
+    color: var(--color-text-primary);
+  }
+}
+
+/* // BRANDS CAROUSEL---------------------------------------------------------------- */
+
+#brands {
+  padding: 1.2rem 0;
+
+  .oc-items {
+    transition: opacity 0.4s ease-in-out;
+
+    &:hover img {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    img {
+      opacity: 0.6;
+    }
+  }
+}
+
+.scrollToTop {
+  position: fixed;
+  right: 0%;
+  opacity: 0;
+  bottom: 4%;
+  z-index: 99;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow-lg);
+  background-color: var(--color-primary);
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+
+  svg {
+    line-height: 0;
+    color: white;
+    font-size: 2rem;
+    transform: translateY(4px);
+  }
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  &.show {
+    right: 3%;
+    opacity: 1;
+  }
+}

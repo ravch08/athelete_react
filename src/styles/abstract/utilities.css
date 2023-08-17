@@ -1,0 +1,73 @@
+@import "./variables.css";
+
+.container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  max-width: var(--width-container);
+}
+
+.container-fluid {
+  width: 90%;
+  margin-inline: auto;
+}
+
+section {
+  padding: var(--section-padding 0);
+}
+
+.pr-05 {
+  padding-right: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-05 {
+  padding-left: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.w-100 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.light {
+  opacity: 0.2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes bounceInfinite {
+  0% {
+    bottom: -17.5rem;
+  }
+
+  50% {
+    bottom: -15rem;
+  }
+
+  100% {
+    bottom: -17.5rem;
+  }
+}

@@ -1,0 +1,109 @@
+@import "../abstract/variables.css";
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-family: var(--fm-primary);
+}
+
+.btn-underline {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.btn-small {
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-family: var(--fm-primary);
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-grey {
+  color: white;
+  width: fit-content;
+  padding: 1.8rem 1rem;
+  background-color: var(--color-body);
+}
+
+.btn-sblue {
+  color: white;
+  width: fit-content;
+  padding: 1.8rem 1rem;
+  background-color: var(--color-primary);
+}
+
+.btn-blue {
+  z-index: 0;
+  color: white;
+  position: relative;
+  display: inline-block;
+  background-color: var(--color-btn-primary);
+  transition: background-color 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--color-secondary);
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.btn-white {
+  z-index: 0;
+  position: relative;
+  background-color: white;
+  transition: color 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+    background-color: var(--color-btn-secondary);
+  }
+
+  &:hover {
+    color: white;
+
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+.badge {
+  display: inline;
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+}
+
+.badge-grey {
+  color: white;
+  background-color: var(--color-body);
+}
+
+.badge-blue {
+  color: white;
+  background-color: var(--color-primary);
+}

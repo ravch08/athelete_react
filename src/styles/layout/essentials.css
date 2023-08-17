@@ -1,0 +1,53 @@
+#essentials {
+  padding: 0;
+
+  h2 {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      color: white;
+      background-color: var(--color-primary);
+    }
+  }
+
+  .essential-item {
+    position: relative;
+
+    figure {
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .btn-small {
+        transform: translateX(1rem);
+      }
+    }
+  }
+
+  .swiper {
+    line-height: 0;
+  }
+
+  .ess-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+  }
+}
